@@ -2,10 +2,10 @@ const fs = require('fs');
 const path = require('path');
 
 // Classe para gerenciar projetos
-class ProjectManager {
+class ProjectDataManager {
     constructor() {
         // Define o caminho absoluto para o arquivo projects.json na raiz do projeto
-        this.filePath = path.resolve(__dirname, '..', 'projects.json');
+        this.filePath = path.resolve(__dirname, '..', 'projectData.json');
         this.projects = this.loadProjects();
     }
 
@@ -51,4 +51,4 @@ class ProjectManager {
     }
 }
 
-module.exports = ProjectManager;
+module.exports = ProjectDataManager;
